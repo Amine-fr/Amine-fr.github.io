@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amine — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="#accueil" class="nav-logo">Amine<span>.</span></a>
+
+  <div class="nav-links" id="nav-links">
+    <a href="#accueil"          class="nav-link active" data-section="accueil">Accueil</a>
+    <a href="#mon-parcours"     class="nav-link"               data-section="mon-parcours">Expériences</a>
+    <a href="#mes-projets"      class="nav-link"               data-section="mes-projets">Projets</a>
+    <a href="#me-contacter"     class="nav-link"               data-section="me-contacter">Contact</a>
+    <a href="#a-propos-de-moi"  class="nav-link"               data-section="a-propos-de-moi">À propos</a>
+  </div>
+
+  <button class="hamburger" id="hamburger" onclick="basculerMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#accueil"          class="nav-link" onclick="fermerMenuMobile()">Accueil</a>
+  <a href="#mon-parcours"     class="nav-link" onclick="fermerMenuMobile()">Expériences</a>
+  <a href="#mes-projets"      class="nav-link" onclick="fermerMenuMobile()">Projets</a>
+  <a href="#me-contacter"     class="nav-link" onclick="fermerMenuMobile()">Contact</a>
+  <a href="#a-propos-de-moi"  class="nav-link" onclick="fermerMenuMobile()">À propos</a>
+</div>
+
+<main>
+
+  <section id="accueil">
+    <div class="hero-inner">
+      <div class="avatar-wrap">
+        <div class="avatar">AM</div>
+        <div class="availability" title="Disponible"></div>
+      </div>
+      <div>
+        <h1 class="hero-greeting">Hey, je suis <em>Amine</em> 👋</h1>
+        <div class="copper-bar"></div>
+        <p class="hero-desc">Étudiant en informatique, spécialisé dans la conception et le développement d'applications. Passionné par la logique, les systèmes bien conçus et la boxe.</p>
+        <div class="tags">
+          <span class="tag">Java</span>
+          <span class="tag">SQL</span>
+          <span class="tag">Frontend</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mon-parcours">
+    <div class="section-eyebrow">Parcours</div>
+    <h2 class="section-title">Mes expériences &amp; formations</h2>
+    <div class="xp-grid">
+      <div>
+        <div class="xp-col-title">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          Formations
+        </div>
+        <div class="expand-card">
+          <div class="expand-header" onclick="ouvrirBoite(this)">
+            <div>
+              <div class="expand-title">BUT Informatique</div>
+              <div class="expand-sub">IUT — 2025 → présent</div>
+            </div>
+            <span class="chevron">&#8964;</span>
+          </div>
+          <div class="expand-body">
+            Formation en développement logiciel, bases de données, algorithmique et conception d'applications. Projets en équipe en conditions réelles.
+          </div>
+        </div>
+        <div class="expand-card">
+          <div class="expand-header" onclick="ouvrirBoite(this)">
+            <div>
+              <div class="expand-title">Baccalauréat général</div>
+              <div class="expand-sub">Lycée Saint éxupéry Valserhône — 2022-2025</div>
+            </div>
+            <span class="chevron">&#8964;</span>
+          </div>
+          <div class="expand-body">
+            Spécialité Mathématiques et Physique-chimie ainsi que l'option Maths Expertes. 
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="xp-col-title">
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          Expériences
+        </div>
+        <div class="expand-card">
+          <div class="expand-header" onclick="ouvrirBoite(this)">
+            <div>
+              <div class="expand-title">Stage de 3e</div>
+              <div class="expand-sub">Restaurant Le P'tit Palavace— 2022</div>
+            </div>
+            <span class="chevron">&#8964;</span>
+          </div>
+          <div class="expand-body">
+            Au cours de ce stage, j'ai occupé plusieurs postes opérationnels : accueil et prise en charge des clients, entretien des locaux, et participation à la préparation des commandes dans le respect des procédures établies. Cette expérience m'a permis de développer des compétences transversales telles que le sens du service, la rigueur dans l'application de méthodes de travail, et la gestion du stress en environnement dynamique.
+          </div>
+        </div>
+        <div class="expand-card">
+          <div class="expand-header" onclick="ouvrirBoite(this)">
+            <div>
+              <div class="expand-title">Agent Intérimaire</div>
+              <div class="expand-sub">Crit Intérim/Aintérim/Adecco 2024-2025</div>
+            </div>
+            <span class="chevron">&#8964;</span>
+          </div>
+          <div class="expand-body">
+            Diverses missions opérationnelles — gestion de stocks, déménagement — qui m'ont forgé une vraie polyvalence terrain : capacité d'adaptation rapide, rigueur logistique et sens de l'effort collectif.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="mes-projets">
+    <div class="section-eyebrow">Réalisations</div>
+    <h2 class="section-title">Voici mes projets</h2>
+    <div class="projects-grid">
+      <a href="nutriscore.html" class="project-card">
+        <div class="proj-icon">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <div class="proj-title">Nutriscore DB</div>
+        <div class="proj-desc">Analyse nutritionnelle via base de données relationnelle.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">SQL</span>
+          <span class="proj-tag">Base de données</span>
+        </div>
+      </a>
+      <a href="chatbot.html" class="project-card">
+        <div class="proj-icon">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <div class="proj-title">Chatbot Java</div>
+        <div class="proj-desc">Agent conversationnel en Java avec logique de réponse.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Java</span>
+        </div>
+      </a>
+      <a href="faerum.html" class="project-card">
+        <div class="proj-icon">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 12h10M12 7v10"/></svg>
+        </div>
+        <div class="proj-title">Faerum</div>
+        <div class="proj-desc">Jeu de plateau stratégique développé en Java.</div>
+        <div class="proj-tags">
+          <span class="proj-tag">Java</span>
+        </div>
+      </a>
+    </div>
+    <p class="more-projects">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg>
+      Plus à venir...
+    </p>
+  </section>
+
+  <section id="me-contacter">
+    <div class="section-eyebrow">Me contacter</div>
+    <h2 class="section-title">Travaillons ensemble</h2>
+    <div class="contact-wrap">
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-group">
+          <label for="name">Nom</label>
+          <input type="text" id="name" placeholder="Votre nom" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="votre@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="5" placeholder="Décrivez votre projet ou question..."></textarea>
+        </div>
+        <button type="submit" class="send-btn">
+          Envoyer
+          <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+      </form>
+      <div class="contact-info">
+        <div class="contact-row">
+          <div class="contact-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          amineeeeee@gmail.com
+        </div>
+        <div class="contact-row">
+          <div class="contact-icon">
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.4 2 2 0 0 1 3.57 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg>
+          </div>
+          06 43 43 43 43
+        </div>
+        <div class="socials">
+          <a href="https://github.com/Amine-fr" class="social-btn" aria-label="GitHub">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="https://linkedin.com/in/amine-el-amiri-00810a276" class="social-btn" aria-label="LinkedIn">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="a-propos-de-moi">
+    <div class="section-eyebrow">À propos</div>
+    <h2 class="section-title">Qui suis-je ?</h2>
+    <p class="about-text">En dehors du code, je pratique la boxe, la pâtisserie et la cuisine — trois disciplines qui demandent de la précision, persévérance et patience.</p>
+    <div class="about-photos">
+      <div class="photo tall">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      </div>
+      <div class="photo">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      </div>
+      <div class="photo">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      </div>
+      <div class="photo wide">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      </div>
+      <div class="photo">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      </div>
+      <div class="photo">
+        <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>Amine EL AMIRI</span> 
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
