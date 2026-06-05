@@ -1,4 +1,3 @@
-
 :root {
   --primary: #b87333;       /* Ta couleur cuivre */
   --primary-light: #f5ede6; /* Fond beige clair */
@@ -17,7 +16,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Pixelify Sans', sans-serif; /* Reste du texte en Pixelify Sans */
   background-color: var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -34,8 +33,8 @@ body {
 }
 
 .nav-logo {
-  font-family: 'DM Serif Display', serif;
-  font-size: 1.4rem; text-decoration: none; color: var(--text);
+  font-family: 'Press Start 2P', cursive; /* Logo en Press Start 2P */
+  font-size: 1.1rem; text-decoration: none; color: var(--text); /* Taille ajustée */
 }
 .nav-logo span { color: var(--primary); }
 
@@ -76,8 +75,10 @@ section {
 }
 
 .section-title {
-  font-family: 'DM Serif Display', serif; font-size: 2rem;
+  font-family: 'Press Start 2P', cursive; /* Gros titres en Press Start 2P */
+  font-size: 1.3rem; /* Taille réduite pour préserver la mise en page */
   font-weight: normal; margin-bottom: 2rem;
+  line-height: 1.5;
 }
 
 
@@ -89,7 +90,7 @@ section {
   width: 64px; height: 64px; border-radius: 50%;
   background: var(--primary); color: var(--white);
   display: flex; align-items: center; justify-content: center;
-  font-family: 'DM Serif Display', serif; font-size: 1.2rem;
+  font-family: 'Press Start 2P', cursive; font-size: 0.9rem; /* Version pixel pour l'avatar */
 }
 
 .availability {
@@ -98,8 +99,13 @@ section {
   background: #4caf50; border: 2px solid var(--white);
 }
 
-.hero-greeting { font-family: 'DM Serif Display', serif; font-size: 2.5rem; font-weight: normal; }
-.hero-greeting em { color: var(--primary); font-style: italic; }
+.hero-greeting { 
+  font-family: 'Press Start 2P', cursive; /* Titre principal en Press Start 2P */
+  font-size: 1.5rem; /* Taille optimisée pour l'affichage */
+  font-weight: normal; 
+  line-height: 1.5;
+}
+.hero-greeting em { color: var(--primary); font-style: normal; } /* Retrait de l'italic incompatible avec le pixel art */
 .copper-bar { width: 50px; height: 3px; background: var(--primary); margin: 0.5rem 0 1rem; }
 .hero-desc { color: var(--text-muted); margin-bottom: 1.25rem; max-width: 550px; }
 
@@ -200,14 +206,16 @@ footer {
   padding: 2rem 0; border-top: 1px solid #e0e0e0; margin-top: 4rem;
   font-size: 0.85rem; color: var(--text-muted);
 }
-footer span:first-child { font-family: 'DM Serif Display', serif; color: var(--primary); }
+footer span:first-child { 
+  font-family: 'Press Start 2P', cursive; /* Signature du footer en Press Start 2P */
+  font-size: 0.75rem; color: var(--primary); 
+}
 
 
 @media (max-width: 680px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
   
- 
   .hero-inner, .xp-grid, .projects-grid, .contact-wrap, .about-photos { 
     grid-template-columns: 1fr; 
     flex-direction: column; 

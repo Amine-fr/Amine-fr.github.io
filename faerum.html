@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amine — Nutriscore DB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">Amine<span>.</span></a>
+  <div class="nav-links">
+    <a href="index.html#mes-projets" class="nav-link">← Retour aux projets</a>
+  </div>
+  <button class="hamburger" id="hamburger" onclick="basculerMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html#mes-projets" class="nav-link" onclick="fermerMenuMobile()">← Retour aux projets</a>
+</div>
+
+<main>
+  <section>
+    <h2 class="section-title">Nutriscore DB</h2>
+
+    <div class="contact-wrap">
+      <div>
+        <div class="section-eyebrow">Contexte du projet</div>
+        <p class="hero-desc">Dans le cadre de la ressource Développement Orienté Objets (R2.01), j'ai réalisé un projet en Java consistant à créer un jeu de plateau jouable directement dans le terminal. Le jeu s'appelle Faërun et oppose deux châteaux qui entraînent différents guerriers (elfes, nains et chefs) pour les envoyer combattre sur un plateau. Le but est simple : réussir à atteindre le château adverse avant l'équipe ennemie.</p>
+        <p class="hero-desc">Ce projet avait pour objectif de mettre en pratique les notions de programmation orientée objet vues en cours à travers un projet concret.</p>
+
+        <div class="section-eyebrow" style="margin-top: 2rem;">Ce que j'ai développé</div>
+        <p class="hero-desc">J'ai développé l'ensemble du jeu en Java en respectant les règles données dans le sujet. J'ai créé les différentes classes représentant les guerriers, les équipes, les châteaux et le plateau.</p>
+        <p class="hero-desc">J'ai également programmé les déplacements des unités, les combats entre les équipes ainsi que les conditions de victoire. Le jeu fonctionne entièrement dans le terminal et permet de simuler une partie complète.</p>
+
+        <div class="section-eyebrow" style="margin-top: 2rem;">Défis techniques</div>
+        <p class="hero-desc">La principale difficulté a été de gérer toutes les classes du projet et de faire en sorte qu'elles interagissent correctement entre elles. Comme chaque type de guerrier possède des caractéristiques différentes, il fallait bien organiser le code pour éviter les répétitions.</p>
+        <p class="hero-desc">J'ai aussi passé du temps à corriger certains bugs liés aux combats et au déroulement des tours de jeu.</p>
+
+        <div class="section-eyebrow" style="margin-top: 2rem;">Ce que j'en retiens</div>
+        <p class="hero-desc">Ce projet m'a permis de progresser en Java et surtout de mieux comprendre la programmation orientée objet. C'était l'un de mes premiers projets avec autant de classes et de mécanismes à gérer.</p>
+        <p class="hero-desc">J'ai appris à mieux organiser mon code, à réfléchir à la structure d'un programme avant de le développer et à être plus rigoureux dans les tests. Ce projet m'a aussi montré l'importance d'avancer régulièrement plutôt que de tout faire à la dernière minute.</p>
+      </div>
+
+      <div class="contact-info">
+        <p class="expand-sub">Projet Académique</p>
+        <p class="expand-sub">23 février 2026</p>
+        <p class="expand-sub">3 personnes</p>
+        <div class="proj-tags" style="margin-top: 0.5rem;">
+          <span class="proj-tag">SQL</span>
+          <span class="proj-tag">Base de données</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>Amine EL AMIRI</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

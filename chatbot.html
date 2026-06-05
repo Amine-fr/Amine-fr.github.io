@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amine — Nutriscore DB</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;700&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">Amine<span>.</span></a>
+  <div class="nav-links">
+    <a href="index.html#mes-projets" class="nav-link">← Retour aux projets</a>
+  </div>
+  <button class="hamburger" id="hamburger" onclick="basculerMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html#mes-projets" class="nav-link" onclick="fermerMenuMobile()">← Retour aux projets</a>
+</div>
+
+<main>
+  <section>
+    <h2 class="section-title">Nutriscore DB</h2>
+
+    <div class="contact-wrap">
+      <div>
+        <div class="section-eyebrow">Contexte du projet</div>
+        <p class="hero-desc">Dans le cadre d'une SAE de première année de BUT Informatique, nous avons réalisé un chatbot en Java en trinôme. Le projet s'est déroulé sur une semaine complète et avait pour objectif de nous faire travailler sur les algorithmes de tri, de recherche et leur optimisation.</p>
+        <p class="hero-desc">Le chatbot devait être capable de répondre à des questions à partir d'une base de connaissances, de tenir compte du contexte de la conversation, d'apprendre de nouvelles réponses lorsqu'il ne connaissait pas la réponse et de comprendre certaines fautes d'orthographe grâce à un système de dictionnaire.</p>
+
+        <div class="section-eyebrow" style="margin-top: 2rem;">Ce que nous avons développé</div>
+        <p class="hero-desc">Nous avons développé un chatbot entièrement en Java capable d'interagir avec l'utilisateur à travers des questions de culture générale. Le programme pouvait rechercher rapidement les informations grâce à différents algorithmes de tri et de recherche étudiés en cours.</p>
+        <p class="hero-desc">Le chatbot était également capable de conserver le contexte d'une conversation pour fournir des réponses plus pertinentes et d'enregistrer de nouvelles informations lorsqu'une réponse n'était pas connue.</p>
+        <p class="hero-desc">Pour faciliter le développement, nous avons réparti les différentes fonctionnalités entre les membres du groupe tout en collaborant régulièrement sur les parties les plus importantes du projet.</p>
+
+        <div class="section-eyebrow" style="margin-top: 2rem;">Mon rôle lors de ce projet</div>
+        <p class="hero-desc">Je me suis principalement occupé de la gestion du contexte des conversations, permettant au chatbot de répondre en tenant compte des questions précédentes. J'ai également participé au développement du système de correction basé sur un dictionnaire afin que le chatbot puisse comprendre certaines fautes d'orthographe.</p>
+        <p class="hero-desc">En parallèle, j'ai contribué aux phases de tests, à la correction de bugs et à la rédaction de la documentation du projet.</p>
+
+        <div class="section-eyebrow" style="margin-top: 2rem;">Ce que j'en retiens</div>
+        <p class="hero-desc">Ce projet m'a permis de mieux comprendre l'utilité concrète des algorithmes de tri et de recherche dans une application réelle. J'ai également renforcé mes compétences en Java et en programmation orientée objet.</p>
+        <p class="hero-desc">Le travail en trinôme m'a appris à mieux organiser le développement d'un projet, à communiquer efficacement avec mes coéquipiers et à utiliser des outils collaboratifs pour travailler sur le même code. Cette expérience m'a aussi montré l'importance d'une bonne répartition des tâches pour avancer efficacement dans un temps limité.</p>
+      </div>
+
+      <div class="contact-info">
+        <p class="expand-sub">Projet Académique</p>
+        <p class="expand-sub">23 février 2026</p>
+        <p class="expand-sub">3 personnes</p>
+        <div class="proj-tags" style="margin-top: 0.5rem;">
+          <span class="proj-tag">SQL</span>
+          <span class="proj-tag">Base de données</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span>Amine EL AMIRI</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
